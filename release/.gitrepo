@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/pmalacho-mit/with-events-suede
 	branch = release
-	commit = fab64014f938fc1bd16f8d7e0f18f2d287ec239b
-	parent = 2f7b2bcedf217a27ebcf46d5a51647b4fefdb07a
+	commit = d6065d2c752471e28dfa40ca1232f80fe3d0ee99
+	parent = 3ad1700c734e41b22175a3d77700986651ae1331
 	method = merge
 	cmdver = 0.4.9
