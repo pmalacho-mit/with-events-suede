@@ -208,9 +208,10 @@ export class WithEvents<Payloads extends PayloadsConstraint> {
         for (let index = 0; index < withEvents.length; index++) {
           const target = withEvents[index];
           for (const key of keys) {
+            type Key = Exclude<CallbackKey, symbol>;
             const callback = callbacks[key] as (...args: any[]) => void;
             unsubscribers[key].push(
-              (target as any as WithEvents<any>).subscribeKey(key, (...args) =>
+              target.subscribeKey(key as Key, (...args: any[]) =>
                 callback(...args, index)
               )
             );
