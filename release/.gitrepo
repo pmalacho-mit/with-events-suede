@@ -4,7 +4,7 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = git@github.com:pmalacho-mit/with-events-suede
+	remote = https://github.com/pmalacho-mit/with-events-suede
 	branch = release
 	commit = e4bfe2e7f58edb0b7ea843346f737b59707afae2
 	parent = 104d19b8832cc0d87fc6f8d032b9627523a7426e
